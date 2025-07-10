@@ -1,20 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using FreelancerHub.UI.Services;
 
-namespace FreelancerHub.UI.Pages.Auth;
+namespace FreelancerHub.UI.Pages;
 
-public class LogoutModel : PageModel
+public class LogoutModel(TokenStorage tokenStorage) : PageModel
 {
-    private readonly TokenStorage _tokenStorage;
-
-    public LogoutModel(TokenStorage tokenStorage)
-    {
-        _tokenStorage = tokenStorage;
-    }
-    
     public IActionResult OnGet()
     {
-        Response.Cookies.Delete("X-Access-Token");
+        tokenStorage.ClearToken();
         return RedirectToPage("/Login");
     }
 }

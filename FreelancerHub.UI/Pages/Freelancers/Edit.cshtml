@@ -4,21 +4,55 @@
     ViewData["Title"] = "Edit Freelancer";
 }
 
-<h2>Edit Freelancer</h2>
-
 <form method="post">
-    <input type="hidden" asp-for="Id" />
-
-    <label>Name</label><br />
-    <input type="text" asp-for="Name" /><br />
-
-    <label>Skill</label><br />
-    <input type="text" asp-for="Skill" /><br />
-
-    <label>Rate per hour</label><br />
-    <input type="number" asp-for="RatePerHour" step="0.01" /><br /><br />
-
-    <button type="submit">Save</button>
+    <br />
+    <div class="container border p-3">
+        <h1 class="text-primary">Update Job Directory</h1>
+        <hr/>
+        <input hidden asp-for="Id"/>
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Username" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Username" class="form-control"/>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Email" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>            
+            <div class="col-2">
+                <label asp-for="PhoneNumber" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>            
+            <div class="col-2">
+                <label asp-for="Skills" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <textarea asp-for="SkillsText" class="form-control"></textarea>
+                <span asp-validation-for="Skills" class="text-danger"></span>
+            </div>            
+            <div class="col-2">
+                <label asp-for="Hobbies" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <textarea asp-for="HobbiesText" class="form-control"></textarea>
+                <span asp-validation-for="Hobbies" class="text-danger"></span>
+            </div>
+            <div class="col-5 offset-2">
+                <a asp-page="/Freelancers/Index" class="btn-primary btn form-control">Back to List</a>
+            </div>            
+            <div class="col-5">
+                <input type="submit" value="Update" class="btn btn-success form-control"/>
+            </div>
+        </div>
+    </div>
 </form>
-
-<a href="/Freelancers/Index">Back to list</a>

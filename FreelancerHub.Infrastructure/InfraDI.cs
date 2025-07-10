@@ -22,6 +22,7 @@ public static class InfraDI
         services.AddSingleton<DapperContext>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
         services.AddScoped<IFreelancerService, FreelancerService>();
         services.AddScoped<IFreelancerRepository, FreelancerRepository>();
         services.AddScoped<IUserRepository, UserRepository>();

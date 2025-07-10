@@ -8,7 +8,6 @@ IdentityModelEventSource.ShowPII = true;
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddInfrastructure(builder.Configuration);
 builder.AddPresentation();
 builder.BuildAndRun();
 

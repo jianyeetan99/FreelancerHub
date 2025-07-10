@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Tests", "FreelancerHub.Tests\FreelancerHub.Tests.csproj", "{5DD23B3B-0983-4EE2-861A-19C56B2508EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.UI", "FreelancerHub.UI\FreelancerHub.UI.csproj", "{1DF3D448-ED45-4FEE-888C-A126CE0E774D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.UI", "FreelancerHub.UI\FreelancerHub.UI.csproj", "{A2EBB882-1A3D-4F9F-966E-A9A78F06D680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,9 +44,9 @@ Global
 		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2EBB882-1A3D-4F9F-966E-A9A78F06D680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2EBB882-1A3D-4F9F-966E-A9A78F06D680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2EBB882-1A3D-4F9F-966E-A9A78F06D680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2EBB882-1A3D-4F9F-966E-A9A78F06D680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

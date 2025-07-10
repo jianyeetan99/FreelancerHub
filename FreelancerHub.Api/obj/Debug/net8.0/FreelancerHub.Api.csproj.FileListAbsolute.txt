@@ -8,7 +8,9 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FreelancerHub.Api.pdb
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Azure.Core.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Azure.Identity.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/BCrypt.Net-Next.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Dapper.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FluentResults.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FluentValidation.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
@@ -20,6 +22,7 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Bcl.Cryptography.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
@@ -35,6 +38,8 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/StackExchange.Redis.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -80,6 +85,7 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.csproj.CoreCompileInputs.cache
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.sourcelink.json
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/rjimswa.dswa.cache.json
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
@@ -94,8 +100,3 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.pdb
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/FreelancerHub.Api.genruntimeconfig.cache
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Api/obj/Debug/net8.0/ref/FreelancerHub.Api.dll
-/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/BCrypt.Net-Next.dll
-/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/FluentResults.dll
-/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
-/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
-/Users/jasmerstan/FreelancerHub/FreelancerHub.Api/bin/Debug/net8.0/StackExchange.Redis.dll

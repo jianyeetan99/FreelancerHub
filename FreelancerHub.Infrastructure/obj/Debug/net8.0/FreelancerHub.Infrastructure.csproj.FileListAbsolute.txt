@@ -10,6 +10,7 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.AssemblyInfoInputs.cache
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.AssemblyInfo.cs
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.sourcelink.json
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/Freelanc.27C97DDA.Up2Date
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/refint/FreelancerHub.Infrastructure.dll

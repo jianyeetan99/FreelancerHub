@@ -1,29 +1,19 @@
 @page
-@model LoginModel
+@model FreelancerHub.UI.Pages.LoginModel
 @{
     ViewData["Title"] = "Login";
 }
 
 <h2>Login</h2>
-@if (!string.IsNullOrEmpty(Model.StatusMessage))
-{
-    <div class="alert alert-success">
-        @Model.StatusMessage
-    </div>
-}
+
 <form method="post">
-    <label>Email</label>
-    <input type="text" name="Email" />
-    <br />
-    <label>Password</label>
-    <input type="password" name="Password" />
-    <br />
-    <button type="submit">Login</button>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
 </form>
-
-@if (Model.Error != null)
-{
-    <p style="color:red">@Model.Error</p>
-}
-
-<a href="/Register">New User? Register Now!</a>

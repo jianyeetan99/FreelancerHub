@@ -159,6 +159,7 @@
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/FreelancerHub.Tests.AssemblyInfoInputs.cache
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/FreelancerHub.Tests.AssemblyInfo.cs
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/FreelancerHub.Tests.csproj.CoreCompileInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/FreelancerHub.Tests.sourcelink.json
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/Freelanc.7BF42FC7.Up2Date
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/FreelancerHub.Tests.dll
 /Users/jasmerstan/FreelancerHub/FreelancerHub.Tests/obj/Debug/net8.0/refint/FreelancerHub.Tests.dll

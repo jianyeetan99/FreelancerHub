@@ -4,25 +4,73 @@
     ViewData["Title"] = "Delete Freelancer";
 }
 
-<h2>Delete Freelancer</h2>
+@* <h2>Delete Freelancer</h2> *@
+@* *@
+@* <div> *@
+@*     <p>Are you sure you want to delete the following freelancer?</p> *@
+@* *@
+@*     <dl> *@
+@*         <dt>Name</dt> *@
+@*         $1$ <dd>@Model.Name</dd> #1# *@
+@* *@
+@*         <dt>Skill</dt> *@
+@*         $1$ <dd>@Model.Skill</dd> #1# *@
+@* *@
+@*         <dt>Rate Per Hour</dt> *@
+@*         $1$ <dd>@Model.RatePerHour</dd> #1# *@
+@*     </dl> *@
+@* *@
+@*     <form method="post"> *@
+@*         <input type="hidden" asp-for="Id" /> *@
+@*         <button type="submit" class="btn btn-danger">Delete</button> *@
+@*         <a asp-page="Index" class="btn btn-secondary">Cancel</a> *@
+@*     </form> *@
+@* </div> *@
 
-<div>
-    <p>Are you sure you want to delete the following freelancer?</p>
-
-    <dl>
-        <dt>Name</dt>
-        <dd>@Model.Name</dd>
-
-        <dt>Skill</dt>
-        <dd>@Model.Skill</dd>
-
-        <dt>Rate Per Hour</dt>
-        <dd>@Model.RatePerHour</dd>
-    </dl>
-
-    <form method="post">
-        <input type="hidden" asp-for="Id" />
-        <button type="submit">Delete</button>
-        <a href="/Freelancers/Index">Cancel</a>
-    </form>
-</div>
+<form method="post">
+    <br />
+    <div class="container border p-3">
+        <h1 class="text-primary">Delete Freelancer</h1>
+        <hr />
+        <input hidden asp-for="Id" />
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Username" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Username"disabled class="form-control" />
+            </div>
+            <div class="col-2">
+                <label asp-for="Email" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Email" disabled class="form-control" />
+            </div>
+            <div class="col-2">
+                <label asp-for="PhoneNumber" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="PhoneNumber" disabled class="form-control" />
+            </div>
+            <div class="col-2">
+                <label asp-for="Skills" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <textarea asp-for="SkillsText" disabled class="form-control"></textarea>
+            </div>
+            <div class="col-2">
+                <label asp-for="Hobbies" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <textarea asp-for="HobbiesText" disabled class="form-control"></textarea>
+            </div>
+            <div class="col-5 offset-2">
+                <a asp-action="Index" asp-controller="JobDirectory" class="btn-primary btn form-control">Back to List</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Delete" class="btn btn-danger form-control" />
+            </div>
+        </div>
+    </div>
+</form>

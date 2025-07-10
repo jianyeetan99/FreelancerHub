@@ -1,6 +1,7 @@
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using FreelancerHub.UI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -34,9 +35,10 @@ public class CreateModel(IHttpClientFactory httpClientFactory, TokenStorage toke
     {
         var client = httpClientFactory.CreateClient("Api");
 
-        if (!string.IsNullOrEmpty(tokenStorage.JwtToken))
+        var jwtToken = tokenStorage.GetToken();
+        if (!string.IsNullOrEmpty(jwtToken))
         {
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokenStorage.JwtToken);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwtToken);
         }
 
         var payload = new

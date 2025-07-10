@@ -1,6 +1,7 @@
 using System.Net.Http.Headers;
 using System.Text.Json;
 using FreelancerHub.Application.DTOs;
+using FreelancerHub.UI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,8 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace FreelancerHub.UI.Pages.Freelancers;
 
 [Authorize]
-public class IndexModel(IHttpClientFactory httpClientFactory, TokenStorage tokenStorage)
-    : PageModel
+public class IndexModel(IHttpClientFactory httpClientFactory, TokenStorage tokenStorage) : PageModel
 {
     public List<FreelancerDto> Freelancers { get; set; } = new();
     public string? Error { get; set; }
@@ -18,13 +18,13 @@ public class IndexModel(IHttpClientFactory httpClientFactory, TokenStorage token
     {
         var client = httpClientFactory.CreateClient("Api");
 
-        var request = new HttpRequestMessage(HttpMethod.Get, "/api/freelancers");
+        var jwtToken = tokenStorage.GetToken();
+        if (!string.IsNullOrEmpty(jwtToken))
+        {
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwtToken);
+        }
 
-        var token = tokenStorage.JwtToken;
-        if (!string.IsNullOrEmpty(token))
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-
-        var response = await client.SendAsync(request);
+        var response = await client.GetAsync("/api/freelancers");
         if (!response.IsSuccessStatusCode)
         {
             Error = "Failed to load freelancers.";
@@ -32,13 +32,11 @@ public class IndexModel(IHttpClientFactory httpClientFactory, TokenStorage token
         }
 
         var json = await response.Content.ReadAsStringAsync();
-        var result = JsonSerializer.Deserialize<List<FreelancerDto>>(json, new JsonSerializerOptions
+        Freelancers = JsonSerializer.Deserialize<List<FreelancerDto>>(json, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
-        });
+        }) ?? new();
 
-        Freelancers = result ?? new();
         return Page();
     }
-
 }

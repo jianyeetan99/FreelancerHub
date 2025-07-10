@@ -24,6 +24,16 @@ public class AuthController(IMediator mediator) : ControllerBase
     public async Task<IActionResult> Login(LoginUserDto dto)
     {
         var result = await mediator.Send(new LoginUserCommand(dto));
-        return result.IsSuccess ? Ok(new { token = result.Value }) : Unauthorized(result.Errors.Select(e => e.Message));
+
+        if (result.IsSuccess)
+        {
+            return Ok(new
+            {
+                accessToken = result.Value.AccessToken,
+                refreshToken = result.Value.RefreshToken
+            });
+        }
+
+        return Unauthorized(result.Errors.Select(e => e.Message));
     }
 }

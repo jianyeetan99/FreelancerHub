@@ -1,4 +1,5 @@
 using FreelancerHub.UI;
+using FreelancerHub.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,17 +13,11 @@ builder.Services.AddAuthentication("CookieAuth")
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddRazorPages(options =>
-{
-    options.Conventions.AuthorizeFolder("/Freelancers");
-});
-
-builder.Services.AddHttpClient("Api", client =>
-{
-    client.BaseAddress = new Uri("http://localhost:5058");
-});
-
+builder.Services.AddRazorPages(options => { options.Conventions.AuthorizeFolder("/Freelancers"); });
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<TokenStorage>();
+
+builder.Services.AddHttpClient("Api", client => { client.BaseAddress = new Uri("http://localhost:5058"); });
 
 var app = builder.Build();
 

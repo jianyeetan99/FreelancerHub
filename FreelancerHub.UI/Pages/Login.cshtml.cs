@@ -5,75 +5,45 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using FreelancerHub.UI.Services;
 
 namespace FreelancerHub.UI.Pages;
 
 public class LoginModel(IHttpClientFactory httpFactory, TokenStorage tokenStorage) : PageModel
 {
     [BindProperty]
-    public string Email { get; set; } = string.Empty;
+    public string Email { get; set; } = "";
 
     [BindProperty]
-    public string Password { get; set; } = string.Empty;
-
-    public string? Error { get; set; }
-    public string? StatusMessage { get; set; }
-
-    public void OnGet(bool registered = false)
-    {
-        if (registered)
-        {
-            StatusMessage = "Registration successful. Please log in.";
-        }
-    }
+    public string Password { get; set; } = "";
 
     public async Task<IActionResult> OnPostAsync()
     {
         var client = httpFactory.CreateClient("Api");
 
-        var payload = new { Email, Password };
-
-        var content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
-        var response = await client.PostAsync("/api/auth/login", content);
-
-        if (!response.IsSuccessStatusCode)
+        var body = new
         {
-            Error = "Invalid login.";
-            return Page();
-        }
-
-        var json = await response.Content.ReadAsStringAsync();
-        var result = JsonSerializer.Deserialize<LoginResult>(json, new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        });
-
-        var token = result?.Token;
-
-        if (string.IsNullOrEmpty(token))
-        {
-            Error = "Failed to retrieve token.";
-            return Page();
-        }
-
-        tokenStorage.JwtToken = token;
-
-        var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, Email),
-            new Claim("AccessToken", token)
+            Email,
+            Password
         };
 
-        var identity = new ClaimsIdentity(claims, "CookieAuth");
-        var principal = new ClaimsPrincipal(identity);
+        var json = JsonSerializer.Serialize(body);
+        var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        await HttpContext.SignInAsync("CookieAuth", principal);
+        var response = await client.PostAsync("/api/auth/login", content);
+        if (!response.IsSuccessStatusCode)
+        {
+            ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            return Page();
+        }
+
+        var result = JsonSerializer.Deserialize<JsonElement>(await response.Content.ReadAsStringAsync());
+        var token = result.GetProperty("accessToken").GetString();
+
+        tokenStorage.SaveToken(token!);
+
+        // await HttpContext.SignInAsync(new ClaimsPrincipal());
 
         return RedirectToPage("/Freelancers/Index");
-    }
-
-    private class LoginResult
-    {
-        public string? Token { get; set; }
     }
 }
