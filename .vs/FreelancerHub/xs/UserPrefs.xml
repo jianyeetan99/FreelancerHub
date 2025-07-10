@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{3C1ED677-6064-4565-B712-52455F01FFBE}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FreelancerHub.Api/Properties/launchSettings.json">
+    <Files>
+      <File FileName="FreelancerHub.Domain/Entities/Freelancers.cs" />
+      <File FileName="FreelancerHub.Domain/Interfaces/IFreelancerRepository.cs" />
+      <File FileName="FreelancerHub.Application/DTOs/FreelancerDto.cs" />
+      <File FileName="FreelancerHub.Application/Handler/Commands/CreateFreelancerCommand.cs" />
+      <File FileName="FreelancerHub.Application/Handler/CreateFreelancerHandler.cs" />
+      <File FileName="FreelancerHub.Application/Interfaces/IFreelancerService.cs" />
+      <File FileName="FreelancerHub.Persistence/DbContext/AppDbContext.cs" />
+      <File FileName="FreelancerHub.Persistence/Repositories/FreelancerRepository.cs" />
+      <File FileName="FreelancerHub.Api/Controllers/FreelancerController.cs" />
+      <File FileName="FreelancerHub.Api/Program.cs" />
+      <File FileName="../../../usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
+      <File FileName="FreelancerHub.Api/appsettings.json" />
+      <File FileName="FreelancerHub.Api/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FreelancerHub" expanded="True">
+            <Node name="FreelancerHub.Api" selected="True" />
+            <Node name="FreelancerHub.Domain" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FreelancerHub.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

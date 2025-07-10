@@ -1,0 +1,27 @@
+@page
+@model FreelancerHub.UI.Pages.Auth.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post">
+    <label>Username</label><br />
+    <input type="text" asp-for="Username" /><br />
+
+    <label>Email</label><br />
+    <input type="email" asp-for="Email" /><br />
+
+    <label>Password</label><br />
+    <input type="password" asp-for="Password" /><br /><br />
+
+    <button type="submit">Register</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red">@Model.ErrorMessage</p>
+}
+
+<a href="/Login">Back to Login</a>

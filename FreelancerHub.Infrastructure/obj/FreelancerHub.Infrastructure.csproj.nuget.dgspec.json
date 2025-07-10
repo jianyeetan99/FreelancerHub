@@ -1,0 +1,247 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/FreelancerHub.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/FreelancerHub.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/FreelancerHub.Application.csproj",
+        "projectName": "FreelancerHub.Application",
+        "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/FreelancerHub.Application.csproj",
+        "packagesPath": "/Users/jasmerstan/.nuget/packages/",
+        "outputPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jasmerstan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj": {
+                "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentResults": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj",
+        "projectName": "FreelancerHub.Domain",
+        "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj",
+        "packagesPath": "/Users/jasmerstan/.nuget/packages/",
+        "outputPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jasmerstan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/FreelancerHub.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/FreelancerHub.Infrastructure.csproj",
+        "projectName": "FreelancerHub.Infrastructure",
+        "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/FreelancerHub.Infrastructure.csproj",
+        "packagesPath": "/Users/jasmerstan/.nuget/packages/",
+        "outputPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jasmerstan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/FreelancerHub.Application.csproj": {
+                "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Application/FreelancerHub.Application.csproj"
+              },
+              "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj": {
+                "projectPath": "/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/FreelancerHub.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

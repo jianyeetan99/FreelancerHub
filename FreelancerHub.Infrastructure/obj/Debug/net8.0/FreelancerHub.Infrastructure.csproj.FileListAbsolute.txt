@@ -1,0 +1,17 @@
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Infrastructure.deps.json
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Infrastructure.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Infrastructure.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Application.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Domain.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Application.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/bin/Debug/net8.0/FreelancerHub.Domain.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.csproj.AssemblyReference.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.AssemblyInfoInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.AssemblyInfo.cs
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/Freelanc.27C97DDA.Up2Date
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/refint/FreelancerHub.Infrastructure.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/FreelancerHub.Infrastructure.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Infrastructure/obj/Debug/net8.0/ref/FreelancerHub.Infrastructure.dll

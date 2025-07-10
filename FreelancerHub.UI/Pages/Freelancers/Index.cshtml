@@ -1,0 +1,57 @@
+@page
+@model FreelancerHub.UI.Pages.Freelancers.IndexModel
+@{
+    ViewData["Title"] = "Freelancer List";
+}
+<br />
+@if (TempData["StatusMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["StatusMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="container p-4 border">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">List of Freelancers</h1>
+        </div>
+        <div class="col text-end pt-1">
+            <a class="btn btn-outline-primary" asp-page="/Freelancers/Create"><i class="bi bi-plus-square-fill"></i> Create New Freelancer</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Skill Sets</th>
+            <th>Hobby</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Freelancers)
+        {
+            <tr>
+                <td>@item.Username</td>
+                <td>@item.Email</td>
+                <td>@item.PhoneNumber</td>
+                <td>@(item.Skills?.Any() == true ? string.Join(", ", item.Skills) : "-")</td>
+                <td>@(item.Hobbies?.Any() == true ? string.Join(", ", item.Hobbies) : "-")</td>
+                <td style="white-space: nowrap;">
+                    <a asp-page="/Freelancers/Edit" asp-route-id="@item.Id"
+                       class="btn btn-success btn-sm me-1" title="Edit">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a asp-page="/Freelancers/Delete" asp-route-id="@item.Id"
+                       class="btn btn-danger btn-sm" title="Delete">
+                        <i class="bi bi-trash-fill"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

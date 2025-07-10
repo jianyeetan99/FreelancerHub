@@ -1,0 +1,11 @@
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/bin/Debug/net8.0/FreelancerHub.Domain.deps.json
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/bin/Debug/net8.0/FreelancerHub.Domain.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/bin/Debug/net8.0/FreelancerHub.Domain.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.AssemblyInfoInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.AssemblyInfo.cs
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.csproj.CoreCompileInputs.cache
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/refint/FreelancerHub.Domain.dll
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/FreelancerHub.Domain.pdb
+/Users/jasmerstan/FreelancerHub/FreelancerHub.Domain/obj/Debug/net8.0/ref/FreelancerHub.Domain.dll

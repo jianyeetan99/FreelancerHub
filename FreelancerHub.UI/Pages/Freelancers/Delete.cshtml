@@ -1,0 +1,28 @@
+@page "{id:guid}"
+@model FreelancerHub.UI.Pages.Freelancers.DeleteModel
+@{
+    ViewData["Title"] = "Delete Freelancer";
+}
+
+<h2>Delete Freelancer</h2>
+
+<div>
+    <p>Are you sure you want to delete the following freelancer?</p>
+
+    <dl>
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+
+        <dt>Skill</dt>
+        <dd>@Model.Skill</dd>
+
+        <dt>Rate Per Hour</dt>
+        <dd>@Model.RatePerHour</dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit">Delete</button>
+        <a href="/Freelancers/Index">Cancel</a>
+    </form>
+</div>

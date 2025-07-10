@@ -1,0 +1,24 @@
+@page "{id:guid}"
+@model FreelancerHub.UI.Pages.Freelancers.EditModel
+@{
+    ViewData["Title"] = "Edit Freelancer";
+}
+
+<h2>Edit Freelancer</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Name</label><br />
+    <input type="text" asp-for="Name" /><br />
+
+    <label>Skill</label><br />
+    <input type="text" asp-for="Skill" /><br />
+
+    <label>Rate per hour</label><br />
+    <input type="number" asp-for="RatePerHour" step="0.01" /><br /><br />
+
+    <button type="submit">Save</button>
+</form>
+
+<a href="/Freelancers/Index">Back to list</a>

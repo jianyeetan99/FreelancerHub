@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Api", "FreelancerHub.Api\FreelancerHub.Api.csproj", "{3C1ED677-6064-4565-B712-52455F01FFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Application", "FreelancerHub.Application\FreelancerHub.Application.csproj", "{9CD12EFB-0635-4FDF-A6DF-FE988AB086D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Domain", "FreelancerHub.Domain\FreelancerHub.Domain.csproj", "{5389CEE0-D13A-43C0-A030-6DDE3EA1B9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Infrastructure", "FreelancerHub.Infrastructure\FreelancerHub.Infrastructure.csproj", "{90A97512-7DF0-40D4-BAAA-CBCDAA2EF02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.Tests", "FreelancerHub.Tests\FreelancerHub.Tests.csproj", "{5DD23B3B-0983-4EE2-861A-19C56B2508EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelancerHub.UI", "FreelancerHub.UI\FreelancerHub.UI.csproj", "{1DF3D448-ED45-4FEE-888C-A126CE0E774D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C1ED677-6064-4565-B712-52455F01FFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1ED677-6064-4565-B712-52455F01FFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1ED677-6064-4565-B712-52455F01FFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1ED677-6064-4565-B712-52455F01FFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD12EFB-0635-4FDF-A6DF-FE988AB086D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD12EFB-0635-4FDF-A6DF-FE988AB086D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD12EFB-0635-4FDF-A6DF-FE988AB086D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD12EFB-0635-4FDF-A6DF-FE988AB086D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5389CEE0-D13A-43C0-A030-6DDE3EA1B9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5389CEE0-D13A-43C0-A030-6DDE3EA1B9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5389CEE0-D13A-43C0-A030-6DDE3EA1B9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5389CEE0-D13A-43C0-A030-6DDE3EA1B9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A97512-7DF0-40D4-BAAA-CBCDAA2EF02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A97512-7DF0-40D4-BAAA-CBCDAA2EF02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A97512-7DF0-40D4-BAAA-CBCDAA2EF02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A97512-7DF0-40D4-BAAA-CBCDAA2EF02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD23B3B-0983-4EE2-861A-19C56B2508EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF3D448-ED45-4FEE-888C-A126CE0E774D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
